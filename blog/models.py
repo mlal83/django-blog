@@ -8,11 +8,12 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Post(models.Model):
     # …
-    def __str__(self):
-    return f"The title of this post is {self.title}"
+        def __str__(self):
+            return f"The title of this post is {self.title}"
 
-    class Meta:
-        ordering = ["-created_on"]
+
+class Meta:
+      ordering = ["-created_on"]
 
 
 
